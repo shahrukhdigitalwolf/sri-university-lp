@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination:true,
       autoplay: true,
       rewind     : true,
-      rewindSpeed: 300,
+      rewindSpeed: 1500,
       gap: '1rem',
       breakpoints: {
         1024  :{perPage: 2},
