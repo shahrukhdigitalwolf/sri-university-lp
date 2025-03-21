@@ -65,3 +65,19 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }).mount();
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#job-roles", {
+    perPage: 4,
+    arrows : false,
+    pagination:true,
+    /* autoplay: true,
+    rewind     : true,
+    rewindSpeed: 300, */
+    gap: '1rem',
+    breakpoints: {
+      1024  :{perPage: 2},
+      767  :{perPage: 1}
+    },
+  }).mount();
+})

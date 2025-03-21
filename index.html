@@ -21,7 +21,7 @@
         }
 
         .splide__pagination {
-            bottom: -3em;
+            bottom: -2em;
             left: 0;
             padding: 0 1em;
             position: absolute;
@@ -63,19 +63,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 bg-[#252323] text-white py-3 px-4">
-            <p class="text-[18px]">For Guaranteed Placement Assistance</p>
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#FFFFFF]">
+        <div class="flex justify-center items-center gap-x-4 gap-y-2 bg-[#252323] text-white py-3 px-4">
+            <span class="text-[14px] md:text-[18px]">For Guaranteed Placement Assistance</span>
             <button type="button" type="button" data-modal-target="modal1"
-                class="bg-gradient-to-r from-[#FEAC2C] to-[#FFED77] text-black px-8 py-1.5 rounded-md">Enrol
+                class="bg-gradient-to-r from-[#FEAC2C] to-[#FFED77] w-[100px] md:w-[150px] text-[13px] md:text-[15px] text-black md:px-8 py-1.5 rounded-md">Enrol
                 Now!</button>
         </div>
         <div class="flex justify-center items-center py-3">
-            <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[250px]" width="403"
+            <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[100px] md:w-[200px]" width="403"
                 height="134">
         </div>
     </header>
-    <main>
+    <main class="pt-36 md:pt-44">
         <section>
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap ">
@@ -198,7 +198,7 @@
             </div>
         </section>
 
-        <section class="bg-[#FFF] py-12">
+       <!--  <section class="bg-[#FFF] py-12">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap gap-y-8">
                     <div class="w-full md:w-[50%] lg:w-[25%] lg:border-r-1 lg:border-black">
@@ -237,7 +237,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="py-12">
             <div class="container mx-auto px-4">
@@ -1244,16 +1244,16 @@
             </div>
         </section>
 
-        <section class="bg-[#191919] text-[#FFFFFF] py-16">
+        <section class="bg-[#191919] text-[#FFFFFF] py-6 lg:py-16">
             <div class="container mx-auto px-4">
                 <div>
-                    <div class="flex flex-wrap lg:flex-nowrap gap-y-3 justify-between">
+                    <div class="flex flex-wrap lg:flex-nowrap gap-y-3 justify-center md:justify-between">
                         <div>
                             <p class="font-semibold text-[28px]">Tution Fees</p>
                         </div>
                         <div>
                             <button
-                                class="bg-[#FEC801] font-semibold text-[#191919] lg:text-[28px] rounded-2xl px-5 py-1 lg:px-10 lg:py-3">
+                                class="bg-[#FEC801] font-semibold text-[#191919] lg:text-[28px] rounded-2xl px-5 py-1 lg:px-10 lg:py-3 block mx-auto">
                                 Rs. 6,40,000/-
                             </button>
                             <p class="font-semibold text-[20px] lg:text-[28px] mt-2 flex items-center gap-2">
@@ -1359,13 +1359,116 @@
 
 
 
-        <section class="py-6 lg:py-12">
+        <section class="py-6 mb-8 lg:mt-0">
             <div class="container mx-auto px-4">
                 <div class="mb-8">
                     <h2 class="text-[25px] font-bold text-[#000000] text-center">Job Roles</h2>
                 </div>
 
-                <div class="flex flex-wrap justify-between gap-y-4">
+                <section id="job-roles" class="splide" aria-label="job-roles">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="h-full">
+                                    <img class="block mx-auto" src="./assets/animation.webp" alt="">
+                                    <div class="bg-[#F2E4E4] shadow-md p-4 h-full">
+                                        <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Animation & VFX Industry Roles
+                                        </h2>
+                                        <hr class="pb-2">
+                                        <ul>
+                                            <li class=""><b class="font-semibold text-[#232323]">3D Animator -</b> <span
+                                                    class="text-[#191919]">Digital Motion Creator</span></li>
+                                            <li><b class="font-semibold">2D Animator -</b> <span
+                                                    class="text-[#191919]">Frame-by-Frame Artist</span></li>
+                                            <li><b class="font-semibold">VFX Artist -</b> <span class="text-[#191919]">Special
+                                                    Effects Designer</span></li>
+                                            <li><b class="font-semibold">Compositor -</b> <span class="text-[#191919]">Seamless
+                                                    Visual Integrator</span></li>
+                                            <li><b class="font-semibold">Pre-Production Artist -</b> <span
+                                                    class="text-[#191919]">Conceptual Design Expert</span></li>
+                                            <li><b class="font-semibold">Storyboard Artist -</b> <span class="text-[#191919]">Visual
+                                                    Story Planner</span></li>
+                                            <li><b class="font-semibold">Roto & Paint Artist -</b> <span
+                                                    class="text-[#191919]">Matte & Cleanup Specialist</span></li>
+                                            <li><b class="font-semibold">Matchmove Artist -</b> <span class="text-[#191919]">Motion
+                                                    Tracking Expert</span></li>
+                                            <li><b class="font-semibold">Lighting Artist -</b> <span
+                                                    class="text-[#191919]">Cinematic Illumination Specialist</span></li>
+                                            <li><b class="font-semibold">Character Rigger -</b> <span
+                                                    class="text-[#191919]">Skeleton & Movement Developer</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="h-full">
+                                    <img class="block mx-auto" src="./assets/animation2.webp" alt="">
+                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                        <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Computer Science & AI-Driven
+                                            Animation Roles</h2>
+                                        <hr class="pb-2">
+                                        <ul>
+                                            <li class=""><b class="font-semibold text-[#232323]">Technical Director (TD) -</b> <span
+                                                    class="text-[#191919]">Production Workflow Engineer</span></li>
+                                            <li><b class="font-semibold">AI & ML for Animation Specialist -</b> <span
+                                                    class="text-[#191919]">Smart Animation Engineer</span></li>
+                                            <li><b class="font-semibold">Rendering Specialist -</b> <span
+                                                    class="text-[#191919]">Final Image Generator</span></li>
+                                            <li><b class="font-semibold">Pipeline Developer -</b> <span
+                                                    class="text-[#191919]">Production Process Optimiser</span></li>
+                                            <li><b class="font-semibold">Simulation & FX Artist -</b> <span
+                                                    class="text-[#191919]">Realistic Effects Creator</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="h-full">
+                                    <img class="block mx-auto" src="./assets/animation3.webp" alt="" class="p-2">
+                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                        <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Film & Live-Action Industry Roles
+                                        </h2>
+                                        <hr class="pb-2">
+                                        <ul>
+                                            <li class=""><b class="font-semibold text-[#232323]">CG Generalist -</b> <span
+                                                    class="text-[#191919]">Multi-Skilled 3D Artist</span></li>
+                                            <li><b class="font-semibold">Motion Graphics Designer -</b> <span
+                                                    class="text-[#191919]">Dynamic Visual Storyteller</span></li>
+                                            <li><b class="font-semibold">Video Editor -</b> <span class="text-[#191919]">Cinematic
+                                                    Post-Production Specialist</span></li>
+                                            <li><b class="font-semibold">AI in Film Production Specialist -</b> <span
+                                                    class="text-[#191919]">Intelligent Media Innovator</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="h-full">
+                                    <img class="block mx-auto" src="./assets/animation4.webp" alt="">
+                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                        <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Other Creative & Technical Roles
+                                        </h2>
+                                        <hr class="pb-2">
+                                        <ul>
+                                            <li class=""><b class="font-semibold text-[#232323]">UI/UX Designer -</b> <span
+                                                    class="text-[#191919]">Interactive Experience Creator</span></li>
+                                            <li><b class="font-semibold">Game Asset Creator -</b> <span
+                                                    class="text-[#191919]">Digital Game Modeller</span></li>
+                                            <li><b class="font-semibold">Virtual Reality (VR) Artist -</b> <span
+                                                    class="text-[#191919]">Immersive World Designer</span></li>
+                                            <li><b class="font-semibold">Augmented Reality (AR) Specialist -</b> <span
+                                                    class="text-[#191919]">Interactive AR Developer</span></li>
+                                            <li><b class="font-semibold">Digital Content Creator -</b> <span
+                                                    class="text-[#191919]">Multimedia Storytelling Expert</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- <div class="flex flex-wrap justify-between gap-y-4">
                     <div class="w-full md:w-[49%] lg:w-[24%]">
                         <img class="block mx-auto" src="./assets/animation.webp" alt="">
                         <div class="bg-[#F2E4E4] shadow-md p-4">
@@ -1454,7 +1557,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -1492,10 +1595,7 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-                  
         </div>
-
-
 
         <section class="py-6">
             <div class="container mx-auto px-4">
@@ -1514,13 +1614,13 @@
 
         <section class="bg-[#000000]">
             <div
-                class="bg-[url('assets/image-hunter.png')] bg-cover bg-center bg-no-repeat lg:h-[540px] w-full flex items-center">
-                <div class="container mx-auto px-4 text-[#FFFFFF]">
+                class="bg-[url('assets/image-hunter.png')] py-3 bg-cover bg-left md:bg-center bg-no-repeat lg:h-[540px] w-full flex items-center relative z-10 before:absolute before:inset-0 before:bg-[#000000] before:opacity-50 before:z-[-1]">
+                <div class="container mx-auto px-4 text-[#FFFFFF] z-20">
                     <div class="flex justify-end">
                         <div class="">
                             <p class="text-[32px] lg:text-[64px] lg:leading-[60px] font-bold">Download</p>
-                            <p class="text-[24px] lg:text-[36px]">Our Course Brochure</p>
-                            <p class="text-[18px]">It is time to get full access to our Programme details<br
+                            <p class="text-[20px] lg:text-[24px] lg:text-[36px]">Our Course Brochure</p>
+                            <p class="text-[15px] lg:text-[18px]">It is time to get full access to our Programme details<br
                                     class="lg:flex hidden"> by downloading the brochure.</p>
                             <button type="button"
                                 class="bg-gradient-to-r from-[#FEAC2C] to-[#FFED77] my-3 lg:my-8 text-black px-8 py-1.5 rounded-md">Download</button>
@@ -1550,7 +1650,7 @@
             </div>
         </section>
 
-        <section class="py-6 lg:py-20 bg-[#FCFAFA]">
+        <section class="py-6 lg:py-20 bg-[#FCFAFA] mb-10 lg:mb-0">
             <div class="container mx-auto px-4">
                 <div class="mb-10">
                     <h2 class="text-[25px] font-bold text-[#000000] text-center">What People Say About Us</h2>
@@ -1560,53 +1660,53 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div
-                                    class="bg-gradient-to-r from-[#FFCF00] to-[#FCB501] h-[400px] w-[100%] rounded-2xl px-10 py-5">
+                                    class="bg-gradient-to-r from-[#FFCF00] to-[#FCB501] h-[610px] lg:h-[430px] w-[100%] rounded-2xl px-10 py-5">
                                     <img src="assets\black-quote.png" alt="">
-                                    <p class="my-10 text-[18px]">This is a University for the future where everyone has
+                                    <p class="my-10 text-[15px] lg:text-[18px]">This is a University for the future where everyone has
                                         a right share of economic, spiritual and social well-being. am so impressed by
                                         this campus because it isn't a clone of what is being taught everywhere else. It
                                         is connecting the ancient values to the needs of the present.</p>
                                     <p class="text-[24px] font-regular">Vandana Shiva, Social Activist</p>
-                                    <p class="text-[18px] font-regular">Author</p>
+                                    <p class="text-[15px] lg:text-[18px] font-regular">Author</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div
-                                    class="bg-gradient-to-r from-[#383838] text-[#FFFFFF] to-[#9E9E9E] h-[400px] w-[100%] rounded-2xl px-10 py-5">
+                                    class="bg-gradient-to-r from-[#383838] text-[#FFFFFF] to-[#9E9E9E] h-[610px] lg:h-[430px] w-[100%] rounded-2xl px-10 py-5">
                                     <img src="assets\white-quote.png" alt="">
-                                    <p class="my-10 text-[18px]">I am quite impressed with facilities, cordial staff and
+                                    <p class="my-10 text-[15px] lg:text-[18px]">I am quite impressed with facilities, cordial staff and
                                         highly talented faculty members here. They have very unique programs. I am qu
                                         campus infrastructure and Integrated programs they are running right now. wish
                                         them luck for the Ayurveda hospital!</p>
                                     <p class="text-[24px] font-regular">Dr. Vijay, Professor</p>
-                                    <p class="text-[18px] font-regular">University of Hyderabad</p>
+                                    <p class="text-[15px] lg:text-[18px] font-regular">University of Hyderabad</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div
-                                    class="bg-gradient-to-r from-[#FFCF00] to-[#FCB501] h-[400px] w-[100%] rounded-2xl px-10 py-5">
+                                    class="bg-gradient-to-r from-[#FFCF00] to-[#FCB501] h-[610px] lg:h-[430px] w-[100%] rounded-2xl px-10 py-5">
                                     <img src="assets\black-quote.png" alt="">
-                                    <p class="my-10 text-[18px]">I found the campus quite beautiful and serene. Around
+                                    <p class="my-10 text-[15px] lg:text-[18px]">I found the campus quite beautiful and serene. Around
                                         here, it is a different kind of experience. It is away from hustle and bustle of
                                         city near Cuttack and Bhubaneswar. If you want to do meditation or spend some
                                         time to do some serious work like writing, thinking, contemplating, this is a
                                         wonderful place.</p>
                                     <p class="text-[24px] font-regular">Vinish Kasturia</p>
-                                    <p class="text-[18px] font-regular">Mathematics Professor, IIT</p>
+                                    <p class="text-[15px] lg:text-[18px] font-regular">Mathematics Professor, IIT</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div
-                                    class="bg-gradient-to-r from-[#383838] text-[#FFFFFF] to-[#9E9E9E] h-[400px] w-[100%] rounded-2xl px-10 py-5">
+                                    class="bg-gradient-to-r from-[#383838] text-[#FFFFFF] to-[#9E9E9E] h-[610px] lg:h-[430px] w-[100%] rounded-2xl px-10 py-5">
                                     <img src="assets\white-quote.png" alt="">
-                                    <p class="my-10 text-[18px]">We needed more experienced people from India.
+                                    <p class="my-10 text-[15px] lg:text-[18px]">We needed more experienced people from India.
                                         Therefore, we visited Sri Sri University. After my visit I was very impressed by
                                         the total i.e. the location. the knowledge and the atmosphere. I met 10 students
                                         and they pitched their ideas to me, which they did really well. I was really
                                         impressed by the management and the things they said which I was recollecting
                                         all my way back and which will remain with me all my life.</p>
                                     <p class="text-[24px] font-regular">Ms. Anja Jessurun Director Shankara</p>
-                                    <p class="text-[18px] font-regular">Health And Wellness By Ayurveda Netherlands,
+                                    <p class="text-[15px] lg:text-[18px] font-regular">Health And Wellness By Ayurveda Netherlands,
                                         Europe</p>
                                 </div>
                             </li>
