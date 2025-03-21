@@ -81,3 +81,20 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   }).mount();
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#placement-opportunities", {
+    perPage: 7,
+    type: 'loop',
+    arrows : false,
+    pagination:true,
+    autoplay: true,
+    rewind     : true,
+    rewindSpeed: 300,
+    gap: '1rem',
+    breakpoints: {
+      1024  :{perPage: 4},
+      767  :{perPage: 3}
+    },
+  }).mount();
+})
