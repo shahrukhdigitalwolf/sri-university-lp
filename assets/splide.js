@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    new Splide("#course-gallery", {
+    new Splide("#software-slider", {
       type   : 'loop',
-      perPage: 5,
-      perMove: 5,
+      perPage: 8,
+      perMove: 4,
       arrows : false,
       pagination:true,
       autoplay: true,
@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
       rewindSpeed: 300,
       gap: '1rem',
       breakpoints: {
-        1024  :{perPage: 3},
-        767  :{perPage: 2},
-        480  :{perPage: 1}
+        1024  :{perPage: 4},
+        767  :{perPage: 3},
+        480  :{perPage: 3}
       },
     }).mount();
 })
@@ -95,6 +95,23 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       1024  :{perPage: 4},
       767  :{perPage: 3}
+    },
+  }).mount();
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#course-highlight", {
+    perPage: 5,
+    type: 'loop',
+    arrows : false,
+    pagination:true,
+    autoplay: true,
+    rewind     : true,
+    rewindSpeed: 300,
+    gap: '1rem',
+    breakpoints: {
+      1024  :{perPage: 3},
+      767  :{perPage: 1}
     },
   }).mount();
 })
