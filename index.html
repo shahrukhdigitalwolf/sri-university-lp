@@ -15,6 +15,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
         body {
             font-family: "Poppins", sans-serif;
             font-weight: 300;
@@ -70,13 +75,37 @@
                 class="bg-gradient-to-r from-[#FEAC2C] to-[#FFED77] w-[100px] md:w-[150px] text-[13px] md:text-[15px] text-black md:px-8 py-1.5 rounded-md">Enrol
                 Now!</button>
         </div>
-        <div class="flex justify-center items-center py-3">
-            <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[100px] md:w-[200px]" width="403"
-                height="134">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div>
+                    <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[100px] md:w-[200px]" width="403"
+                    height="134">
+    
+                </div>
+                <div class="lg:block hidden">
+                    <ul class="flex jusitfy-center gap-x-4">
+                        <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
+                            <a href="#course-fact-sheet">Course Fact Sheet</a>
+                        </li>
+                        <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
+                            <a href="#career-pros">Career Prospects</a>
+                        </li>
+                        <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
+                            <a href="#job-role">Job Roles</a>
+                        </li>
+                        <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
+                            <a href="#what-people-say-about-us">What People Say About Us</a>
+                        </li>
+                        <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
+                            <a href="#help-&-support">Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <main class="pt-36 md:pt-44">
-        <section>
+    <main class="pt-36 md:pt-42">
+        <!-- <section>
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap ">
                     <div class="w-full lg:w-[50%] bg-[#FDA828] flex flex-col justify-center ps-auto p-5 lg:ps-16">
@@ -96,6 +125,9 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section>
+            <img class="w-full h-auto" src="./assets/banner.jpg" alt="" width="1920" height="700">
         </section>
 
         <section class="py-6 lg:py-12">
@@ -106,7 +138,7 @@
                 <section id="course-highlight" class="splide" aria-label="career prospects">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide">
+                            <li class="splide__slide lg:border-r border-dotted">
                                 <div class="relative mb-5">
                                     <img class="block m-auto" src="./assets/conveyor.png" alt="" width="100"
                                         height="100">
@@ -116,7 +148,7 @@
                                 </div>
                             </li>
                             
-                            <li class="splide__slide">
+                            <li class="splide__slide lg:border-r border-dotted">
                                 <div class="relative mb-5">
                                     <img class="block m-auto" src="./assets/knowledge.png" alt="" width="100"
                                         height="100">
@@ -126,7 +158,7 @@
                                 </div>
                             </li>
                             
-                            <li class="splide__slide">
+                            <li class="splide__slide lg:border-r border-dotted">
                                 <div class="relative mb-5">
                                     <img class="block m-auto" src="./assets/analysis.png" alt="" width="100"
                                         height="100">
@@ -136,7 +168,7 @@
                                 </div>
                             </li>
                             
-                            <li class="splide__slide">
+                            <li class="splide__slide lg:border-r border-dotted">
                                 <div class="relative mb-5">
                                     <img class="block m-auto" src="./assets/internship.png" alt="" width="100"
                                         height="100">
@@ -146,7 +178,7 @@
                                 </div>
                             </li>
                             
-                            <li class="splide__slide">
+                            <li class="splide__slide lg:border-r border-dotted">
                                 <div class="relative mb-5">
                                     <img class="block m-auto" src="./assets/certificate.png" alt="" width="100"
                                         height="100">
@@ -270,7 +302,7 @@
             </div>
         </section>
 
-        <section class="bg-[#FFF] py-12">
+        <section class="bg-[#FFF] py-12" id="1">
             <div class="container mx-auto px-4">
                 <div>
                     <h2 class="text-[25px] text-center font-[500] mb-4">Program Outcome</h2>
@@ -328,12 +360,12 @@
             </div>
         </section>
 
-        <section class="py-12">
+        <section class="py-12" id="course-fact-sheet">
             <div class="container mx-auto px-4">
-                <h2 class="text-center text-[25px] font-[500] text-[#232323] md:mb-4">Course Information</h2>
                 <div class="flex flex-wrap lg:mt-20 mt-8">
                     <div class="w-full lg:w-[55%] bg-[#FFD18A] lg:px-14 lg:py-6 px-4 py-4 order-2 lg:order-1">
-                        <h3 class="md:text-[30px] text-[20px] font-bold text-left text-[#00000] leading-tight pb-5">
+                        <h2 class="text-[20px] lg:text-[25px] font-[600] md:mb-4">Course Information</h2>
+                        <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-5">
                             Eligibility
                         </h3>
                         <div class="pb-5">
@@ -343,18 +375,18 @@
                                 <p class="text-[#2A2A2A] text-[15px] mb-3">Obtained at least 45% marks (40% marks in case of candidates belonging to reserved category) in the above subjects taken together.</p>
                             </div>
                             <div>
-                                <h2 class="text-[20px] font-bold text-left text-[#2A2A2A] pb-2">Or</h2>
+                                <h2 class="text-[20px] font-[500] text-left pb-2">Or</h2>
                                 <p class="text-[#2A2A2A] text-[15px] mb-3">Passed D.Voc. Stream in the same or allied sector. (The Universities will offer suitable bridge courses such as Mathematics, Physics, Engineering drawing, etc., for the students coming from diverse backgrounds to prepare Level playing field and desired learning outcomes of the Program, including Physics, and Mathematics as compulsory subjects in +2 level,</p>
                             </div>
                         </div>
                         <div>
-                            <h3 class="md:text-[30px] text-[20px] font-bold text-left text-[#00000] leading-tight pb-2">
+                            <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-2">
                                 8 Semesters
                             </h3>
                             <p class="text-[#2A2A2A] text-[15px] mb-3">4 years full time</p>
                         </div>
                         <div>
-                            <h3 class="md:text-[30px] text-[20px] font-bold text-left text-[#00000] leading-tight pb-2">
+                            <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-2">
                                 INR
                             </h3>
                             <p class="text-[#2A2A2A] text-[15px] mb-2">Rs. 80000 /- Per Semester</p>
@@ -1080,7 +1112,7 @@
 
 
 
-        <section class="py-6 lg:py-8">
+        <section class="py-6 lg:py-8" id="career-pros">
             <div class="">
                 <div class="mb-3">
                     <h2 class="text-[25px] font-[500] text-[#000000] text-center">Career Prospects</h2>
@@ -1416,7 +1448,7 @@
 
 
 
-        <section class="py-6 mb-8 lg:mt-0">
+        <section class="py-6 mb-8 lg:mt-0" id="job-role">
             <div class="container mx-auto px-4">
                 <div class="mb-8">
                     <h2 class="text-[25px] font-[500] text-[#000000] text-center">Job Roles</h2>
@@ -1654,7 +1686,7 @@
             </div>
         </div>
 
-        <section class="py-6">
+        <!-- <section class="py-6">
             <div class="container mx-auto px-4">
                 <h2 class="lg:mt-5 text-center text-[25px] font-semibold text-[#232323]">A Team of Professional Industry
                     Experts
@@ -1665,6 +1697,20 @@
                 </p>
                 <div>
                     <img src="./assets/industry-experts.png" alt="" class="w-full h-auto">
+                </div>
+            </div>
+        </section> -->
+
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <div>
+                    <img class="w-full h-auto" src="./assets/team-work.png" alt="" width="1200" height="450">
+                </div>
+                <div class="bg-gradient-to-b from-[#FFF7CC] to-[#FFFFFF] text-center py-6 px-4 rounded-lg shadow-sm">
+                    <h2 class=" text-[20px] lg:text-[25px] font-semibold text-[#232323]">A Team of Professional Industry Experts</h2>
+                    <p class="text-[15px] lg:text-[17px] text-[#1F1F1F] max-w-full lg:mt-4 mx-auto">
+                        We have some of the top industry experts from the industry. They will help you in every possible way so that you can learn with ease.
+                    </p>
                 </div>
             </div>
         </section>
@@ -1707,7 +1753,7 @@
             </div>
         </section>
 
-        <section class="py-6 lg:py-20 bg-[#FCFAFA] mb-10 lg:mb-0">
+        <section class="py-6 lg:py-20 bg-[#FCFAFA] mb-10 lg:mb-0" id="what-people-say-about-us">
             <div class="container mx-auto px-4">
                 <div class="mb-10">
                     <h2 class="text-[25px] font-bold text-[#000000] text-center">What People Say About Us</h2>
@@ -1795,7 +1841,7 @@
             </div>
         </section>
 
-        <section class="pt-6 lg:pt-12 pb-12" id="faq">
+        <section class="pt-6 lg:pt-12 pb-12" id="help-&-support">
             <div class="container mx-auto px-4">
                 <div class="pb-6">
                     <h2 class="text-[25px] font-bold text-[#000000] text-center">Help & Support</h2>
