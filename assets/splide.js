@@ -102,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#course-highlight", {
     perPage: 5,
-    type: 'loop',
     arrows : false,
     pagination:true,
     autoplay: true,

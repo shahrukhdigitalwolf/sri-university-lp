@@ -14,7 +14,7 @@
         " rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
         @media (prefers-reduced-motion: no-preference) {
             html {
                 scroll-behavior: smooth;
@@ -23,6 +23,18 @@
         body {
             font-family: "Poppins", sans-serif;
             font-weight: 300;
+        }
+
+        h2{
+            font-family: "Roboto Serif", serif;
+        }
+        label{
+            font-family: "Roboto Serif", serif;
+            font-weight: 400;
+        }
+        select{
+            font-family: "Roboto Serif", serif;
+            font-weight: 400;
         }
 
         .splide__pagination {
@@ -76,13 +88,13 @@
                 Now!</button>
         </div>
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-3">
-                <div>
-                    <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[100px] md:w-[200px]" width="403"
+            <div class="flex flex-wrap items-center  py-3">
+                <div class="w-full md:w-[20%]">
+                    <img src="./assets/sri-sri-university-logo.png" alt="sri-sri-university-logo" class="w-[100px] md:w-[200px] block mx-auto" width="403"
                     height="134">
     
                 </div>
-                <div class="lg:block hidden">
+                <!-- <div class="lg:block hidden">
                     <ul class="flex jusitfy-center gap-x-4">
                         <li class="hover:bg-[#FEAB2B] rounded-lg px-3 py-2">
                             <a href="#course-fact-sheet">Course Fact Sheet</a>
@@ -100,6 +112,9 @@
                             <a href="#help-&-support">Help & Support</a>
                         </li>
                     </ul>
+                </div> -->
+                <div class="w-full lg:w-[80%]">
+                    <h2 class="text-center text-[14px] lg:text-[40px] font-[500] text-center">Faculty Of Engineering and Technology</h2>
                 </div>
             </div>
         </div>
@@ -132,58 +147,63 @@
 
         <section class="py-6 lg:py-12">
             <div class="container mx-auto px-4">
-                <div>
-                    <h2 class="text-[25px] font-[500] mb-4 text-center">Course Highlights</h2>
+                <div class="mb-10">
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B]">Course Highlights</h2>
                 </div>
                 <section id="course-highlight" class="splide" aria-label="career prospects">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide lg:border-r border-dotted">
-                                <div class="relative mb-5">
-                                    <img class="block m-auto" src="./assets/conveyor.png" alt="" width="100"
-                                        height="100">
+                            <li class="splide__slide">
+                                <div class="relative mb-5 border-2 border-dashed border-[#3488FF] bg-[#E4EFFF] h-[250px] w-[250px] rounded-full flex justify-center flex-col mx-auto">
+                                    <img class="block mx-auto" src="./assets/conveyor.png" alt="" width="80"
+                                        height="80">
                                     <div>
-                                        <h3 class="text-[12px] lg:text-[15px] py-5 px-5 text-center">Industry-Focused Curriculum</h3>
+                                        <h3 class="text-[12px] lg:text-[15px] font-[500] py-5 px-5 text-center">Production Studio
+                                            Based curriculum</h3>
                                     </div>
                                 </div>
                             </li>
                             
-                            <li class="splide__slide lg:border-r border-dotted">
-                                <div class="relative mb-5">
-                                    <img class="block m-auto" src="./assets/knowledge.png" alt="" width="100"
-                                        height="100">
+                            <li class="splide__slide">
+                                <div class="relative mb-5 border-2 border-dashed border-[#F5821F] bg-[#FFE0C5] h-[250px] w-[250px] rounded-full flex justify-center flex-col mx-auto">
+                                    <img class="block mx-auto" src="./assets/knowledge.png" alt="" width="80"
+                                        height="80">
                                     <div>
-                                        <h3 class="text-[12px] lg:text-[15px] py-5 px-5 text-center">Hands-on Learning</h3>
+                                        <h3 class="text-[12px] lg:text-[15px] font-[500] py-5 px-5 text-center">Hands-on
+                                            Learning</h3>
                                     </div>
                                 </div>
                             </li>
                             
-                            <li class="splide__slide lg:border-r border-dotted">
-                                <div class="relative mb-5">
-                                    <img class="block m-auto" src="./assets/analysis.png" alt="" width="100"
-                                        height="100">
+                            <li class="splide__slide">
+                                <div class="relative mb-5 border-2 border-dashed border-[#3488FF] bg-[#E4EFFF] h-[250px] w-[250px] rounded-full flex justify-center flex-col mx-auto">
+                                    <img class="block mx-auto" src="./assets/analysis.png" alt="" width="80"
+                                        height="80">
                                     <div>
-                                        <h3 class="text-[12px] lg:text-[15px] py-5 px-5 text-center">Data Analytics & Visualization</h3>
+                                        <h3 class="text-[12px] lg:text-[15px] font-[500] py-5 px-5 text-center">Career Guidance & 
+                                            Placement</h3>
                                     </div>
                                 </div>
                             </li>
                             
-                            <li class="splide__slide lg:border-r border-dotted">
-                                <div class="relative mb-5">
-                                    <img class="block m-auto" src="./assets/internship.png" alt="" width="100"
-                                        height="100">
+                            <li class="splide__slide">
+                                <div class="relative mb-5 border-2 border-dashed border-[#F5821F] bg-[#FFE0C5] h-[250px] w-[250px] rounded-full flex justify-center flex-col mx-auto">
+                                    <img class="block mx-auto" src="./assets/internship.png" alt="" width="80"
+                                        height="80">
                                     <div>
-                                        <h3 class="text-[12px] lg:text-[15px] py-5 px-5 text-center">Internship linked to Job</h3>
+                                        <h3 class="text-[12px] lg:text-[15px] font-[500] py-5 px-5 text-center">Certification from
+                                            Hi-Tech Animation</h3>
                                     </div>
                                 </div>
                             </li>
                             
-                            <li class="splide__slide lg:border-r border-dotted">
-                                <div class="relative mb-5">
-                                    <img class="block m-auto" src="./assets/certificate.png" alt="" width="100"
-                                        height="100">
+                            <li class="splide__slide">
+                                <div class="relative mb-5 border-2 border-dashed border-[#3488FF] bg-[#E4EFFF] h-[250px] w-[250px] rounded-full flex justify-center flex-col mx-auto">
+                                    <img class="block mx-auto" src="./assets/certificate.png" alt="" width="80"
+                                        height="80">
                                     <div>
-                                        <h3 class="text-[12px] lg:text-[15px] py-5 px-5 text-center">Internship linked to Job</h3>
+                                        <h3 class="text-[12px] lg:text-[15px] font-[500] py-5 px-5 text-center">Job Opportunity
+                                            @ Hi-Tech Animation</h3>
                                     </div>
                                 </div>
                             </li>
@@ -197,52 +217,39 @@
         <section class="py-12">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap gap-y-4">
-                    <div class="w-full lg:w-[50%] lg:px-6">
-                        <h2 class="text-[25px] font-[500] mb-4">About the Programme</h2>
-                        <div class="flex gap-x-1 items-start">
+                    <div class="w-full lg:w-[60%] lg:px-6">
+                        <h2 class="text-[20px] lg:text-[40px] font-[500] text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Introduction</h2>
+                        <div class="flex gap-x-2 items-start">
                             <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
                             <p class="mb-4">
-                                Let your imagination and technical skills soar with our B.Tech in Computer Science &
-                                Engineering (Specialisation in Animation & VFX). This program for dreamers, innovators, and
-                                problem-solvers combines the strengths of computer science and engineering with the infinite
-                                possibilities of animation and visual effects.
+                                Let your imagination and technical skills soar with our B.Tech in Computer Science & Engineering (Specialisation in Animation & VFX). A program for dreamers, innovators, and problem-solvers, it combines the strength of computer science and engineering with the infinite possibilities of animation and visual effects.
                             </p>
                         </div>
-                        <div class="flex gap-x-1 items-start">
+                        <div class="flex gap-x-2 items-start">
                             <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
                             <p class="mb-4">
-                                This program seeks to equip students with a strong background in computer science
-                                supplemented by specialist knowledge in Animation and Visual Effects (VFX) to keep up with
-                                the changing needs of the media and entertainment industry. It prepares students with the
-                                technical and creative expertise required for animation production, VFX compositing, 3D
-                                asset creation, and post-production. By mixing computer programming, AI-based animation
-                                technology, and professional software training, the program readies graduates for employment
-                                in film, television, gaming, digital media, and beyond.
+                                It's time to explore a program that combines fundamental computer science concepts like programming, artificial intelligence, and machine learning—with sophisticated animation and VFX concepts. Study from industry professionals, develop real-world projects and become proficient in Software Development and Animation skills. Through a hands-on learning environment, you will acquire the technical as well as creative skills necessary for success in IT sectors, entertainment, gaming, and multimedia industries.
                             </p>
                         </div>
-                        <div class="flex gap-x-1 items-start">
+                        <div class="flex gap-x-2 items-start">
                             <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
                             <p class="mb-4">
-                                Equipped with cutting-edge studios, industry-standard software, and hands-on tutorials,
-                                you'll produce cinematic masterworks, interactive games, and hyper-realistic virtual worlds.
-                                Whether you aspire to code clever animation systems, create breathtaking effects, or
-                                revolutionise digital experiences, the program unlocks unlimited possibilities.
+                                With state-of-the-art studios, professional-grade software, and hands-on workshops, you'll create cinematic masterpieces, immersive games, and hyper-realistic virtual worlds. Whatever your dream to code smart animation systems, craft stunning effects, or transform digital experiences this program opens the door to infinite possibilities.
                             </p>
                         </div>
-                        <div class="flex gap-x-1 items-start">
+                        <div class="flex gap-x-2 items-start">
                             <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
                             <p class="mb-4">
-                                Come and turn your passion into a career—where technology and imagination meet, and the
-                                possibilities are endless!
+                                Join us and make your passion a career where technology and creativity converge, and innovation has no limits!
                             </p>
                         </div>
                     </div>
-                    <div class="w-full lg:w-[50%] font-bold">
+                    <div class="w-full lg:w-[40%] font-bold">
                         <div
-                            class="bg-[#F2F2F2] p-6 lg:p-8 relative before:content-[''] before:absolute before:-top-2 before:-right-2 before:w-[70%] before:h-[70%] before:bg-[#735FF2] before:z-[-1] after:content-[''] after:absolute after:-bottom-2 after:-left-2 after:w-[70%] after:h-[70%] after:bg-[#FCA825] after:z-[-1]">
+                            class="bg-gradient-to-b from-[#f5a520b8] to-[#ffd18a9c] p-6 lg:p-8 relative ">
                             <div>
-                                <h3 class="text-[20px] lg:text-[25px] font-bold text-center mb-4">Admission Enquiry
-                                    Form!</h3>
+                                <h2 class="text-[20px] lg:text-[25px] font-bold mb-4">Admission Enquiry
+                                    Form!</h2>
                             </div>
                             <form action="#">
                                 <div class="flex flex-wrap gap-y-4">
@@ -301,59 +308,154 @@
                 </div>
             </div>
         </section>
-
-        <section class="bg-[#FFF] py-12" id="1">
+        <section class="bg-[#FFF] pt-12">
             <div class="container mx-auto px-4">
                 <div>
-                    <h2 class="text-[25px] text-center font-[500] mb-4">Program Outcome</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Program Details</h2>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Strong Computer Science Foundation
+                        </span>
+                        <p>
+                            Develop expertise in data structures, algorithms, software engineering, and computer graphics to build efficient animation and VFX applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Advanced Animation & VFX Techniques
+                        </span>
+                        <p>
+                            Master 3D modeling, texturing, rigging, animation, and rendering using industry-standard tools like Autodesk Maya, Blender, Houdini, and Unreal Engine.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Real-time Graphics & Game Development
+                        </span>
+                        <p>
+                            Learn real-time rendering, physics-based simulations, and interactive storytelling for game development and AR/VR applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            AI in Animation
+                        </span>
+                        <p>
+                            Understand how AI-driven tools enhance animation workflows, character movements, and VFX automation.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Cinematic & Storytelling Skills
+                        </span>
+                        <p>
+                            Gain expertise in storyboarding, cinematography, and visual storytelling, essential for film, gaming, and virtual production.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Cloud & High-Performance Computing for VFX
+                        </span>
+                        <p>
+                            Utilize cloud computing and GPU acceleration for rendering complex VFX sequences and high-quality animations.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Industry-Oriented Learning
+                        </span>
+                        <p>
+                            Work on live projects, internships, and hackathons in collaboration with film studios, game development companies, and animation studios.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-2 items-start mb-4">
+                    <img class="mt-1" src="./assets/arrow-arrow.png" alt="" width="20" height="15">
+                    <div>
+                        <span class="text-[20px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">
+                            Career Readiness & Entrepreneurship
+                        </span>
+                        <p>
+                            Prepare for careers in animation, gaming, VFX, CGI, and virtual production, or launch independent animation & VFX startups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#FFF] py-12">
+            <div class="container mx-auto px-4">
+                <div>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Program Outcome</h2>
                 </div>
                 <div class="flex flex-wrap gap-y-8">
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#FFEFB5] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Mastering Advanced Data
-                                Science Techniques</h3>
+                        <div class="bg-[#FFEFD6] border-2 border-dashed border-[#F5821F] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Crafting Immersive 
+                                <br>Digital Worlds</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Gain expertise in data analytics, machine learning, and artificial intelligence to tackle industry challenges.</p>
+                            <p class="text-[15px] text-center">Design engaging virtual spaces and authentic characters through animation, VFX, and real-time technologies like AR/VR.</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#E9E9E9] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Mastering Advanced Data
-                                Science Techniques</h3>
+                        <div class="bg-[#F9FCFF] border-2 border-dashed border-[#1C91F0] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Weaving Code and 
+                                <br>Creativity</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Build proficiency in Python, R, SQL, cloud computing, and big data frameworks to manage and analyze complex datasets</p>
+                            <p class="text-[15px] text-center">Learn to create the exceptional talent for storytelling fusion with technical skill.</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#FFEFB5] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Encouraging Leadership & 
-                                Strategic Thinking</h3>
+                        <div class="bg-[#FFEFD6] border-2 border-dashed border-[#F5821F] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Designing Smart 
+                                <br>Visual Systems</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Foster decision-making and problem-solving skills to lead AI- driven projects and data-driven organizations.</p>
+                            <p class="text-[15px] text-center">You'll develop solutions that adapt to user behaviour and reshape digital creativity.</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#E9E9E9] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Implementing Ethical AI & 
-                                Data Governance</h3>
+                        <div class="bg-[#F9FCFF] border-2 border-dashed border-[#1C91F0] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Advocating Ethical Storytelling 
+                                <br>in Technology</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Understand the importance of responsible AI, data privacy, and cybersecurity in a technology-driven world.</p>
+                            <p class="text-[15px] text-center">Acquire skills in crafting visually appealing yet ethical digital stories while respecting privacy, diversity, and narrative truth.</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#FFEFB5] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Developing Entrepreneurial & 
-                                Research Capabilities</h3>
+                        <div class="bg-[#FFEFD6] border-2 border-dashed border-[#F5821F] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Leading Creative-Technical 
+                                <br>Teams</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Learn to apply data science for business intelligence, product innovation, and startup ventures.</p>
+                            <p class="text-[15px] text-center">Develop into a strong leader able to handle multidisciplinary teams in animation, engineering, and visual production.</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-[33.33%] px-1.5">
-                        <div class="bg-gradient-to-b from-[#E9E9E9] to-[#FFFFFF] rounded-lg px-8 py-10">
-                            <h3 class="font-semibold text-[25px] text-center">Serving Society Through 
-                                Data-Driven Solutions</h3>
+                        <div class="bg-[#F9FCFF] border-2 border-dashed border-[#1C91F0] rounded-[20px] px-8 py-10">
+                            <h3 class="font-semibold text-[25px] text-center">Innovating for 
+                                <br>Social Impact</h3>
                                 <div class="border border-[#959595] border-dotted max-w-full w-[250px] mx-auto my-4"></div>
-                            <p class="text-[15px] text-center">Use data analytics and AI to address real-world issues in healthcare, finance, and sustainability.</p>
+                            <p class="text-[15px] text-center">Utilise animation, VFX, and computer science for entertainment purposes and provide awareness, push education, and enable sustainability.</p>
                         </div>
                     </div>
                 </div>
@@ -363,12 +465,12 @@
         <section class="py-12" id="course-fact-sheet">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap lg:mt-20 mt-8">
-                    <div class="w-full lg:w-[55%] bg-[#FFD18A] lg:px-14 lg:py-6 px-4 py-4 order-2 lg:order-1">
-                        <h2 class="text-[20px] lg:text-[25px] font-[600] md:mb-4">Course Information</h2>
+                    <div class="w-full lg:w-[50%] bg-[#FFD18A] lg:px-14 lg:py-6 px-4 py-4 order-2 lg:order-1">
+                        <h2 class="text-[20px] lg:text-[35px] font-[600] md:mb-4">Course Fact Sheet</h2>
                         <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-5">
                             Eligibility
                         </h3>
-                        <div class="pb-5">
+                        <div class="pb-3">
                             <div class=" md:pr-12">
                                 <p class="text-[#2A2A2A] text-[15px] mb-3">Minimum Eligibility Criteria Passed 10+2 examination with</p>
                                 <p class="text-[#2A2A2A] text-[15px] mb-3">Physics/ Mathematics/ Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship </p>
@@ -381,13 +483,13 @@
                         </div>
                         <div>
                             <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-2">
-                                8 Semesters
+                                Duration
                             </h3>
                             <p class="text-[#2A2A2A] text-[15px] mb-3">4 years full time</p>
                         </div>
                         <div>
                             <h3 class="md:text-[23px] text-[20px] font-[500] text-left text-[#00000] leading-tight pb-2">
-                                INR
+                                Tuition Fees
                             </h3>
                             <p class="text-[#2A2A2A] text-[15px] mb-2">Rs. 80000 /- Per Semester</p>
                             <p class="text-[#2A2A2A] text-[15px]">*Fees such as Admission, Caution Money, Examination, Hostel, and Transport fees are extra</p>
@@ -398,9 +500,9 @@
                                 Now!</button>
                         </div>
                     </div>
-                    <div class="w-full lg:w-[45%] relative top-0 right-0 order-1 lg:order-2">
+                    <div class="w-full lg:w-[50%] relative top-0 right-0 order-1 lg:order-2">
                         <img src="./assets/vfx-122354.webp" alt="" width="100%" height="100%"
-                            class="relative lg:w-[600px] h-auto lg:top-[-40px] lg:left-[-50px] z-[2]">
+                            class="relative lg:w-[600px] h-auto z-[2]">
                     </div>
                 </div>
             </div>
@@ -1115,7 +1217,7 @@
         <section class="py-6 lg:py-8" id="career-pros">
             <div class="">
                 <div class="mb-3">
-                    <h2 class="text-[25px] font-[500] text-[#000000] text-center">Career Prospects</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Career Prospects</h2>
                 </div>
                 <section id="career-prospects" class="splide" aria-label="career prospects">
                     <div class="splide__track">
@@ -1257,7 +1359,7 @@
         <section class="pb-6 lg:pb-20 mt-10 lg:mt-28 mb-14 lg:mb-4">
             <div class="container mx-auto px-4">
                 <div class="mb-10">
-                    <h2 class="text-[25px] font-[500] text-[#000000] text-center">Our Recognitions</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Our Recognitions</h2>
                 </div>
                 <section id="Recognitions" class="splide" aria-label="Recognitions">
                     <div class="splide__track">
@@ -1364,7 +1466,7 @@
         <section class="py-6 lg:py-12 bg-[#F5F5F5]">
             <div class="container mx-auto px-4">
                 <div class="mb-5">
-                    <h2 class="text-[25px] font-[500] text-[#000000] text-center">Placement Opportunities </h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Placement Opportunities </h2>
                     <p class="text-center text-[#1F1F1F] max-w-full w-[800px] mx-auto">
                         Enter a world of endless opportunities! Our industry connections guarantee the best placements
                         in animation studios,
@@ -1451,7 +1553,7 @@
         <section class="py-6 mb-8 lg:mt-0" id="job-role">
             <div class="container mx-auto px-4">
                 <div class="mb-8">
-                    <h2 class="text-[25px] font-[500] text-[#000000] text-center">Job Roles</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Job Roles</h2>
                 </div>
 
                 <section id="job-roles" class="splide" aria-label="job-roles">
@@ -1460,7 +1562,7 @@
                             <li class="splide__slide">
                                 <div class="h-full">
                                     <img class="block mx-auto" src="./assets/animation.webp" alt="">
-                                    <div class="bg-[#F2E4E4] shadow-md p-4 h-full">
+                                    <div class="bg-[#F9FCFF] shadow-md p-4 h-full">
                                         <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Animation & VFX Industry Roles
                                         </h2>
                                         <hr class="pb-2">
@@ -1492,7 +1594,7 @@
                             <li class="splide__slide">
                                 <div class="h-full">
                                     <img class="block mx-auto" src="./assets/animation2.webp" alt="">
-                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                    <div class="bg-[#F9FCFF] shadow-md p-4 lg:h-[436px] h-full">
                                         <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Computer Science & AI-Driven
                                             Animation Roles</h2>
                                         <hr class="pb-2">
@@ -1514,7 +1616,7 @@
                             <li class="splide__slide">
                                 <div class="h-full">
                                     <img class="block mx-auto" src="./assets/animation3.webp" alt="" class="p-2">
-                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                    <div class="bg-[#F9FCFF] shadow-md p-4 lg:h-[436px] h-full">
                                         <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Film & Live-Action Industry Roles
                                         </h2>
                                         <hr class="pb-2">
@@ -1534,7 +1636,7 @@
                             <li class="splide__slide">
                                 <div class="h-full">
                                     <img class="block mx-auto" src="./assets/animation4.webp" alt="">
-                                    <div class="bg-[#F2E4E4] shadow-md p-4 lg:h-[436px] h-full">
+                                    <div class="bg-[#F9FCFF] shadow-md p-4 lg:h-[436px] h-full">
                                         <h2 class="text-[#232323] text-[18px] font-semibold pb-2">Other Creative & Technical Roles
                                         </h2>
                                         <hr class="pb-2">
@@ -1702,7 +1804,7 @@
         </section> -->
 
         <section class="py-12">
-            <div class="container mx-auto px-4">
+            <!-- <div class="container mx-auto px-4">
                 <div>
                     <img class="w-full h-auto" src="./assets/team-work.png" alt="" width="1200" height="450">
                 </div>
@@ -1712,7 +1814,7 @@
                         We have some of the top industry experts from the industry. They will help you in every possible way so that you can learn with ease.
                     </p>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="bg-[#000000]">
@@ -1721,8 +1823,8 @@
                 <div class="container mx-auto px-4 text-[#FFFFFF] z-20">
                     <div class="flex justify-end">
                         <div class="">
-                            <p class="text-[32px] lg:text-[64px] lg:leading-[60px] font-bold">Download</p>
-                            <p class="text-[20px] lg:text-[24px] lg:text-[36px]">Our Course Brochure</p>
+                            <p class="text-[32px] lg:text-[45px] lg:leading-[60px] font-[500]" style="font-family: 'Roboto Serif',sans-serif;">Download</p>
+                            <p class="text-[20px] lg:text-[30px]" style="font-family: 'Roboto Serif',sans-serif;">Our Course Brochure</p>
                             <p class="text-[15px] lg:text-[18px]">It is time to get full access to our Programme details<br
                                     class="lg:flex hidden"> by downloading the brochure.</p>
                             <button type="button"
@@ -1756,7 +1858,7 @@
         <section class="py-6 lg:py-20 bg-[#FCFAFA] mb-10 lg:mb-0" id="what-people-say-about-us">
             <div class="container mx-auto px-4">
                 <div class="mb-10">
-                    <h2 class="text-[25px] font-bold text-[#000000] text-center">What People Say About Us</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">What People Say About Us</h2>
                 </div>
                 <section id="testimonials" class="splide" aria-label="testimonials">
                     <div class="splide__track">
@@ -1844,7 +1946,7 @@
         <section class="pt-6 lg:pt-12 pb-12" id="help-&-support">
             <div class="container mx-auto px-4">
                 <div class="pb-6">
-                    <h2 class="text-[25px] font-bold text-[#000000] text-center">Help & Support</h2>
+                    <h2 class="text-[20px] lg:text-[40px] font-[500] text-center text-dec underline decoration-3 underline-offset-10 decoration-[#FEAB2B] mb-6">Help & Support</h2>
                 </div>
                 <div class="flex flex-wrap jusitfy-center gap-[2%]">
 
