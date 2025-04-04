@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     new Splide("#software-slider", {
       type   : 'loop',
       perPage: 8,
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         480  :{perPage: 3}
       },
     }).mount();
-})
+}) */
 
 document.addEventListener("DOMContentLoaded", function () {
     new Splide("#career-prospects", {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }).mount();
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     new Splide("#Recognitions", {
       type   : 'loop',
       perPage: 7,
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         767  :{perPage: 3}
       },
     }).mount();
-})
+}) */
 
 document.addEventListener("DOMContentLoaded", function () {
     new Splide("#testimonials", {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   new Splide("#placement-opportunities", {
     perPage: 7,
     type: 'loop',
@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
       767  :{perPage: 3}
     },
   }).mount();
-})
+}) */
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   new Splide("#course-highlight", {
     perPage: 5,
     arrows : false,
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: '1rem',
     breakpoints: {
       1024  :{perPage: 3},
-      767  :{perPage: 1}
+      767  :{perPage: 2}
     },
   }).mount();
-})
+}) */
